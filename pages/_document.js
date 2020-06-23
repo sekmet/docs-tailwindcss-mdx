@@ -19,6 +19,7 @@ class MasterDocument extends Document {
                     <link rel="manifest" href="/manifest.json"/>
                     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00b4b6"/>
                     <meta name="theme-color" content="#ffffff"/>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css"/>
                 </Head>
             <body>
                 <Main />
