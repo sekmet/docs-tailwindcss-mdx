@@ -1,0 +1,54 @@
+{
+  "name": "mdx-tailwindcss-documentation",
+  "version": "0.2.0",
+  "scripts": {
+    "dev": "next -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0"
+  },
+  "keywords": [
+    "nextjs",
+    "tailwind",
+    "mdx",
+    "documentation"
+  ],
+  "author": {
+    "email": "sekmet@open4g.com",
+    "name": "Carlos Guimaraes",
+    "url": "https://www.open4g.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@vimeo/player": "^2.12.0",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-less": "^1.0.1",
+    "anchor-js": "^4.2.2",
+    "escape-html": "^1.0.3",
+    "gsap": "^3.3.4",
+    "lodash": "^4.17.15",
+    "mousetrap": "^1.6.5",
+    "next": "^9.2.0",
+    "next-mdx-enhanced": "^3.0.0",
+    "nprogress": "^0.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "autoprefixer": "^9.8.2",
+    "babel-plugin-import-glob-array": "^0.2.0",
+    "less": "^3.11.3",
+    "less-loader": "^6.1.2",
+    "next-purgecss": "^4.0.0",
+    "normalize.css": "^8.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "prism-react-renderer": "^1.1.1",
+    "prismjs": "^1.20.0",
+    "react-use": "^15.3.0",
+    "styled-jsx-plugin-postcss": "^2.0.1",
+    "stylefmt": "^6.0.3",
+    "tailwindcss": "^1.4.0"
+  }
+}

@@ -1,0 +1,130 @@
+---
+layout: documentation
+title: "Whitespace"
+description: "Utilities for controlling an element's white-space property."
+---
+
+import CodeSample from "../../components/partials/CodeSample";
+import {ResponsiveCodeSample, HighlightCode, NoneScreenSize, SmScreenSize, MdScreenSize, LgScreenSize, XlScreenSize} from "../../components/partials/ResponsiveCodeSample";
+
+@include('_partials.class-table', [
+  'rows' => [
+    [
+      '.whitespace-normal',
+      'white-space: normal;',
+      'Cause text to wrap normally within an element.',
+    ],
+    [
+      '.whitespace-no-wrap',
+      'white-space: nowrap;',
+      'Prevent text from wrapping within an element.',
+    ],
+    [
+      '.whitespace-pre',
+      'white-space: pre;',
+      'Preserve line returns and spaces within an element.',
+    ],
+    [
+      '.whitespace-pre-line',
+      'white-space: pre-line;',
+      'Preserve line returns but not spaces within an element.',
+    ],
+    [
+      '.whitespace-pre-wrap',
+      'white-space: pre-wrap;',
+      'Preserve spaces but not line returns within an element.',
+    ],
+  ]
+])
+
+## Normal
+
+Use `.whitespace-normal` to cause text to wrap normally within an element. Newlines and spaces will be collapsed.
+
+<CodeSample lang="html">
+<div className="whitespace-normal">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quidem itaque beatae, rem tenetur quia iure, eum natus enim maxime laudantium quibusdam illo nihil,reprehenderit saepe quam aliquid odio accusamus.
+</div>
+</CodeSample>
+
+## No Wrap
+
+Use `.whitespace-no-wrap` to prevent text from wrapping within an element. Newlines and spaces will be collapsed.
+
+<CodeSample lang="html">
+<div className="whitespace-no-wrap overflow-x-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quidem itaque beatae, rem tenetur quia iure, eum natus enim maxime laudantium quibusdam illo nihil,reprehenderit saepe quam aliquid odio accusamus.
+</div>
+</CodeSample>
+
+## Pre
+
+Use `.whitespace-pre` to preserve newlines and spaces within an element. Text will not be wrapped.
+
+<CodeSample lang="html">
+<div className="whitespace-pre overflow-x-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quidem itaque beatae, rem tenetur quia iure, eum natus enim maxime laudantium quibusdam illo nihil,reprehenderit saepe quam aliquid odio accusamus.
+</div>
+</CodeSample>
+
+## Pre Line
+
+Use `.whitespace-pre-line` to preserve newlines but not spaces within an element. Text will be wrapped normally.
+
+<CodeSample lang="html">
+<div className="whitespace-pre-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quidem itaque beatae, rem tenetur quia iure, eum natus enim maxime laudantium quibusdam illo nihil,reprehenderit saepe quam aliquid odio accusamus.
+</div>
+</CodeSample>
+
+## Pre Wrap
+
+Use `.whitespace-pre-wrap` to preserve newlines and spaces within an element. Text will be wrapped normally.
+
+<CodeSample lang="html">
+<div className="whitespace-pre-wrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quidem itaque beatae, rem tenetur quia iure, eum natus enim maxime laudantium quibusdam illo nihil,reprehenderit saepe quam aliquid odio accusamus.
+</div>
+</CodeSample>
+
+## Responsive
+
+To control the whitespace property of an element only at a specific breakpoint, add a `{screen}:` prefix to any existing whitespace utility. For example, adding the class `md:whitespace-pre` to an element would apply the `whitespace-pre` utility at medium screen sizes and above.
+
+For more information about Tailwind's responsive design features, check out the [Responsive Design](/docs/responsive-design) documentation.
+
+<ResponsiveCodeSample>
+<NoneScreenSize>
+<div className="whitespace-normal overflow-x-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quidem itaque beatae, rem tenetur quia iure, eum natus enim maxime laudantium quibusdam illo nihil,reprehenderit saepe quam aliquid odio accusamus.
+</div>
+</NoneScreenSize>
+<SmScreenSize>
+<div className="whitespace-no-wrap overflow-x-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quidem itaque beatae, rem tenetur quia iure, eum natus enim maxime laudantium quibusdam illo nihil,reprehenderit saepe quam aliquid odio accusamus.
+</div>
+</SmScreenSize>
+<MdScreenSize>
+<div className="whitespace-pre overflow-x-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quidem itaque beatae, rem tenetur quia iure, eum natus enim maxime laudantium quibusdam illo nihil,reprehenderit saepe quam aliquid odio accusamus.
+</div>
+</MdScreenSize>
+<LgScreenSize>
+<div className="whitespace-pre-line overflow-x-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quidem itaque beatae, rem tenetur quia iure, eum natus enim maxime laudantium quibusdam illo nihil,reprehenderit saepe quam aliquid odio accusamus.
+</div>
+</LgScreenSize>
+<XlScreenSize>
+<div className="whitespace-pre-wrap overflow-x-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quidem itaque beatae, rem tenetur quia iure, eum natus enim maxime laudantium quibusdam illo nihil,reprehenderit saepe quam aliquid odio accusamus.
+</div>
+</XlScreenSize>
+<HighlightCode>
+{`
+<div className="none:whitespace-normal sm:whitespace-no-wrap md:whitespace-pre lg:whitespace-pre-line xl:whitespace-pre-wrap ...">...</div>
+`}
+</HighlightCode>
+</ResponsiveCodeSample>
+
+## Customizing
+
+@include('_partials.variants-and-disabling', [
+    'utility' => [
+        'name' => 'whitespace',
+        'property' => 'whitespace',
+    ],
+    'variants' => [
+        'responsive',
+    ],
+])

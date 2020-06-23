@@ -1,0 +1,165 @@
+---
+layout: documentation
+title: "Align Items"
+description: "Utilities for controlling how flex items are positioned along a container's cross axis."
+features:
+  responsive: true
+  customizable: false
+  hover: false
+  focus: false
+---
+import ClassTable from "../../components/partials/ClassTable";
+import CodeSample from "../../components/partials/CodeSample";
+import {ResponsiveCodeSample, HighlightCode, NoneScreenSize, SmScreenSize, MdScreenSize, LgScreenSize, XlScreenSize} from "../../components/partials/ResponsiveCodeSample";
+
+<ClassTable rows={
+[
+    [
+      '.items-stretch',
+      'align-items: stretch;',
+      "Stretch items to fill the cross axis.",
+    ],
+    [
+      '.items-start',
+      'align-items: flex-start;',
+      "Align items against the start of the cross axis.",
+    ],
+    [
+      '.items-center',
+      'align-items: center;',
+      "Align items along the center of the cross axis.",
+    ],
+    [
+      '.items-end',
+      'align-items: flex-end;',
+      "Align items against the end of the cross axis.",
+    ],
+    [
+      '.items-baseline',
+      'align-items: baseline;',
+      "Align the baselines of each item.",
+    ],
+  ]
+}>
+</ClassTable>
+
+## Stretch
+
+Use `.items-stretch` to stretch items to fill the flex container's cross axis:
+
+<CodeSample lang="html">
+<div className="flex items-stretch bg-gray-200 h-24">
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+</div>
+</CodeSample>
+
+## Start
+
+Use `.items-start` to align items to the start of the flex container's cross axis:
+
+<CodeSample lang="html">
+<div className="flex items-start bg-gray-200 h-24">
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+</div>
+</CodeSample>
+
+## Center
+
+Use `.items-center` to align items along the center of the flex container's cross axis:
+
+<CodeSample lang="html">
+<div className="flex items-center bg-gray-200 h-24">
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+</div>
+</CodeSample>
+
+## End
+
+Use `.items-end` to align items to the end of the flex container's cross axis:
+
+<CodeSample lang="html">
+<div className="flex items-end bg-gray-200 h-24">
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+</div>
+</CodeSample>
+
+## Baseline
+
+Use `.items-baseline` to align items along the flex container's cross axis such that all of their baselines align:
+
+<CodeSample lang="html">
+<div className="flex items-baseline bg-gray-200 h-24">
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-base">1</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-2xl">2</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-lg">3</div>
+</div>
+</CodeSample>
+
+## Responsive
+
+To control the alignment of flex items at a specific breakpoint, add a `{screen}:` prefix to any existing utility class. For example, use `md:items-center` to apply the `items-center` utility at only medium screen sizes and above.
+
+For more information about Tailwind's responsive design features, check out the [Responsive Design](/docs/responsive-design) documentation.
+
+<ResponsiveCodeSample>
+<NoneScreenSize>
+<div className="flex items-stretch bg-gray-200 h-24">
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-base">1</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-2xl">2</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-lg">3</div>
+</div>
+</NoneScreenSize>
+<SmScreenSize>
+<div className="flex items-start bg-gray-200 h-24">
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-base">1</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-2xl">2</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-lg">3</div>
+</div>
+</SmScreenSize>
+<MdScreenSize>
+<div className="flex items-center bg-gray-200 h-24">
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-base">1</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-2xl">2</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-lg">3</div>
+</div>
+</MdScreenSize>
+<LgScreenSize>
+<div className="flex items-end bg-gray-200 h-24">
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-base">1</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-2xl">2</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-lg">3</div>
+</div>
+</LgScreenSize>
+<XlScreenSize>
+<div className="flex items-baseline bg-gray-200 h-24">
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-base">1</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-2xl">2</div>
+  <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 text-lg">3</div>
+</div>
+</XlScreenSize>
+@slot('code')
+<div className="none:items-stretch sm:items-start md:items-center lg:items-end xl:items-baseline ...">
+  {/* ... */}
+</div>
+@endslot
+</ResponsiveCodeSample>
+
+## Customizing
+
+@include('_partials.variants-and-disabling', [
+    'utility' => [
+        'name' => 'align-items',
+        'property' => 'alignItems',
+    ],
+    'variants' => [
+        'responsive',
+    ],
+])

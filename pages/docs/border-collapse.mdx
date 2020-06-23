@@ -1,0 +1,97 @@
+---
+layout: documentation
+title: "Border Collapse"
+description: "Utilities for controlling whether table borders should collapse or be separated."
+---
+
+import ClassTable from "../../components/partials/ClassTable";
+import CodeSample from "../../components/partials/CodeSample";
+import {ResponsiveCodeSample, HighlightCode, NoneScreenSize, SmScreenSize, MdScreenSize, LgScreenSize, XlScreenSize} from "../../components/partials/ResponsiveCodeSample";
+
+<ClassTable rows={
+[
+    [
+      '.border-collapse',
+      'border-collapse: collapse;',
+      "Collapses the table borders into a single border when possible.",
+    ],
+    [
+      '.border-separate',
+      'border-collapse: separate;',
+      "Separates the table borders; each cell will display its own borders.",
+    ]
+]}>
+</ClassTable>
+
+## Collapse
+
+Use `.border-collapse` to combine adjacent cell borders into a single border when possible. Note that this includes collapsing borders on the top-level `<table>` tag.
+
+<CodeSample lang="html">
+{`
+<table className="border-collapse border-2 border-gray-500">
+  <thead>
+    <tr>
+      <th className="border border-gray-400 px-4 py-2 text-gray-800">State</th>
+      <th className="border border-gray-400 px-4 py-2 text-gray-800">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td className="border border-gray-400 px-4 py-2">Indiana</td>
+      <td className="border border-gray-400 px-4 py-2">Indianapolis</td>
+    </tr>
+    <tr>
+      <td className="border border-gray-400 px-4 py-2">Ohio</td>
+      <td className="border border-gray-400 px-4 py-2">Columbus</td>
+    </tr>
+    <tr>
+      <td className="border border-gray-400 px-4 py-2">Michigan</td>
+      <td className="border border-gray-400 px-4 py-2">Detroit</td>
+    </tr>
+  <tbody>
+</table>
+`}
+</CodeSample>
+
+## Separate
+
+Use `.border-separate` to force each cell to display its own separate borders.
+
+<CodeSample lang="html">
+{`
+<table className="border-separate border-2 border-gray-500">
+  <thead>
+    <tr>
+      <th className="border border-gray-400 px-4 py-2 text-gray-800">State</th>
+      <th className="border border-gray-400 px-4 py-2 text-gray-800">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td className="border border-gray-400 px-4 py-2">Indiana</td>
+      <td className="border border-gray-400 px-4 py-2">Indianapolis</td>
+    </tr>
+    <tr>
+      <td className="border border-gray-400 px-4 py-2">Ohio</td>
+      <td className="border border-gray-400 px-4 py-2">Columbus</td>
+    </tr>
+    <tr>
+      <td className="border border-gray-400 px-4 py-2">Michigan</td>
+      <td className="border border-gray-400 px-4 py-2">Detroit</td>
+    </tr>
+  <tbody>
+</table>
+`}
+</CodeSample>
+
+
+## Customizing
+
+@include('_partials.variants-and-disabling', [
+    'utility' => [
+        'name' => 'border collapse',
+        'property' => 'borderCollapse',
+    ],
+    'variants' => ['responsive'],
+])
