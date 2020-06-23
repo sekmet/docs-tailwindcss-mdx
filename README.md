@@ -1,8 +1,12 @@
-# Tailwind CSS Documentation
+# Tailwind CSS Documentation 
+*[WORK IN PROGRESS]*
+
+## Live Version
+[https://tailwindcss-docs-site.vercel.app/](https://tailwindcss-docs-site.vercel.app/)
 
 ## Developing
 
-Tailwind uses the [Next.js + MDX](https://github.com/vercel/next.js) for its documentation. Here is how you can generate the documentation locally:
+Uses [Next.js + MDX](https://github.com/vercel/next.js) to generate the documentation. Here is how you can generate the documentation locally:
 
 1. Go to your Tailwind Docs folder
 
