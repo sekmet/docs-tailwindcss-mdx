@@ -1,5 +1,6 @@
 node_modules/
 .next/
 out/
+.idea/
 # Ignore next-mdx-enhanced cache directory
 .mdx-data

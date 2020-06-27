@@ -2,7 +2,7 @@
 *[WORK IN PROGRESS]*
 
 ## Live Version
-[https://tailwindcss-docs-site.vercel.app/](https://tailwindcss-docs-site.vercel.app/)
+[https://docs-tailwindcss-mdx.vercel.app/](https://docs-tailwindcss-mdx.vercel.app/)
 
 ## Developing
 
