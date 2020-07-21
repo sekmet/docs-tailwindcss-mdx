@@ -25,7 +25,7 @@
     "anchor-js": "^4.2.2",
     "escape-html": "^1.0.3",
     "gsap": "^3.3.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "mousetrap": "^1.6.5",
     "next": "^9.2.0",
     "next-mdx-enhanced": "^3.0.0",
