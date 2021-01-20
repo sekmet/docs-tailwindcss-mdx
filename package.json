@@ -24,7 +24,7 @@
     "@zeit/next-less": "^1.0.1",
     "anchor-js": "^4.2.2",
     "escape-html": "^1.0.3",
-    "gsap": "^3.3.4",
+    "gsap": "^3.6.0",
     "lodash": "^4.17.15",
     "mousetrap": "^1.6.5",
     "next": "^9.2.0",
