@@ -45,7 +45,7 @@
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
     "prism-react-renderer": "^1.1.1",
-    "prismjs": "^1.20.0",
+    "prismjs": "^1.25.0",
     "react-use": "^15.3.0",
     "styled-jsx-plugin-postcss": "^2.0.1",
     "stylefmt": "^6.0.3",
